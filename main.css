@@ -1,0 +1,42 @@
+@import url("valtozok.css");
+
+body {
+  margin: 0;
+  padding-top: 80px;
+  font-family: Arial, sans-serif;
+  background-color: var(--light-blue);
+}
+
+
+header {
+  position: fixed;
+  top: 0; left: 0; width: 100%;
+  background-color: var(--dark-blue);
+  color: var(--light-blue); z-index: 1000;
+  display: flex; align-items: center; gap: 2rem;
+  padding: 0 2rem; height: 80px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--light-blue);
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0; padding: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  color: var(--light-blue);
+}
+
+nav ul li a:hover {
+  background-color: var(--mid-blue);
+}
