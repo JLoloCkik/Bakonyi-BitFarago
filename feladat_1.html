@@ -3,63 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <title>1. Feladat - Csapatoldal</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/css/style.css">
+    <link rel="stylesheet" href="style/css/feladat1.css">
 </head>
 <body>
-    <nav>
-        <a href="index.html">Vissza a főmenübe</a>
-        <a href="feladat_2.html">Ugrás a 2. feladatra</a>
-    </nav>
-
-    <h1>Csapatunk oldala</h1>
-
-    <p>Aktuális idő: <span id="ora"></span></p>
-
-    <hr>
-
-    <h2>Tagok</h2>
-    <div class="csapattag">
-        <img src="kepek/JLolo.jpg" alt="JLolo">
-        <h3>Jankai Lőrinc</h3>
-        <button onclick="toggleBemutatkozas('tagID1')">Bemutatkozás mutatása/elrejtése</button>
-        <div id="tagID1"class="bemutatkozas">
-            <p>Sziasztok,</p>
-        </div>
-    </div>
-     <div class="csapattag">
-        <img src="kepek/JLolo.jpg" alt="Gábor">
-        <h3>Bálint Gábor</h3>
-        <button onclick="toggleBemutatkozas('tagID2')">Bemutatkozás mutatása/elrejtése</button>
-        <div id="tagID2" class="bemutatkozas">
-            <p>Sziasztok,</p>
-        </div>
-    </div>
-    <div class="csapattag">
-        <img src="kepek/Kristóf.jpg" alt="Kristóf">
-        <h3>Nagy Kristóf</h3>
-        <button onclick="toggleBemutatkozas('tagID3')">Bemutatkozás mutatása/elrejtése</button>
-        <div id="tagID3" class="bemutatkozas">
-            <p>____---__----_--____</p>
-        </div>
-    </div>
-
-    <h2>Felkészítő tanár</h2>
-    <div class="tanar">
-        <img src="kepek/tanar.jpg" alt="Felkészítő tanár">
-        <h3>Szabó Emánuel</h3>
-    </div>
-
-    <p><strong>Iskola:</strong>Ceglédi SZC Közgazdasági és Informatikai Technikum</p>
-
-    <hr>
-
-    <h2>Galéria</h2>
-    <button id="kep-gomb">Következő kép</button>
-    <div id="galeria">
-        <img src="kepek/extra1.jpg" class="extra-kep" alt="Extra kép 1">
-        <img src="kepek/extra2.jpg" class="extra-kep" alt="Extra kép 2">
-        <img src="kepek/extra3.jpg" class="extra-kep" alt="Extra kép 3">
-    </div>
-  <script src="script.js"></script>
+    <header>
+        <h1>BC Kft.</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Vissza a főmenübe</a></li>
+                <li><a href="feladat_2.html">Ugrás a 2. feladatra</a></li>
+            </ul>
+            
+            
+        </nav>
+    </header>
+    <main>
+        
+            <h1>Csapatunk oldala</h1>
+        
+            <p>Aktuális idő: <span id="ora"></span></p>
+        
+            <hr>
+        
+            <h2>Tagok</h2>
+            <div class="csapattag">
+                <img src="kepek/JLolo.jpg" alt="JLolo">
+                <h3>Jankai Lőrinc</h3>
+                <button onclick="toggleBemutatkozas('tagID1')">Bemutatkozás mutatása/elrejtése</button>
+                <div id="tagID1"class="bemutatkozas">
+                    <p>Sziasztok,</p>
+                </div>
+            </div>
+            <div class="csapattag">
+                <img src="kepek/JLolo.jpg" alt="Gábor">
+                <h3>Bálint Gábor</h3>
+                <button onclick="toggleBemutatkozas('tagID2')">Bemutatkozás mutatása/elrejtése</button>
+                <div id="tagID2" class="bemutatkozas">
+                    <p>Sziasztok,</p>
+                </div>
+            </div>
+            <div class="csapattag">
+                <img src="kepek/Kristóf.jpg" alt="Kristóf">
+                <h3>Nagy Kristóf</h3>
+                <button onclick="toggleBemutatkozas('tagID3')">Bemutatkozás mutatása/elrejtése</button>
+                <div id="tagID3" class="bemutatkozas">
+                    <p>____---__----_--____</p>
+                </div>
+            </div>
+        
+            <h2>Felkészítő tanár</h2>
+            <div class="tanar">
+                <img src="kepek/tanar.jpg" alt="Felkészítő tanár">
+                <h3>Szabó Emánuel</h3>
+            </div>
+        
+            <p><strong>Iskola:</strong>Ceglédi SZC Közgazdasági és Informatikai Technikum</p>
+        
+            <hr>
+        
+            <h2>Galéria</h2>
+            <button id="kep-gomb">Következő kép</button>
+            <div id="galeria">
+                <img src="kepek/extra1.jpg" class="extra-kep" alt="Extra kép 1">
+                <img src="kepek/extra2.jpg" class="extra-kep" alt="Extra kép 2">
+                <img src="kepek/extra3.jpg" class="extra-kep" alt="Extra kép 3">
+            </div>
+    </main>
+  <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,129 @@
+@import url("valtozok.css");
+
+
+body {
+  margin: 0;
+  padding-top: 80px; 
+  font-family: Arial, sans-serif;
+  background-color: var(--light-blue);
+  color: var(--deep-blue);
+}
+
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--dark-blue);
+  color: var(--light-blue);
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 2rem;
+  height: 80px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--light-blue);
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  color: var(--light-blue);
+  transition: background-color 0.2s ease;
+}
+
+nav ul li a:hover {
+  background-color: var(--mid-blue);
+  color: white;
+}
+
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+main h1, 
+main h2, 
+main h3 {
+  color: var(--dark-blue);
+}
+
+main p {
+  line-height: 1.6;
+}
+
+
+.csapattag, .tanar {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.csapattag img, .tanar img {
+  max-width: 180px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.csapattag h3, .tanar h3 {
+  margin: 0.5rem 0;
+  color: var(--deep-blue);
+}
+
+button {
+  background-color: var(--mid-blue);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--dark-blue);
+}
+
+
+.bemutatkozas {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background-color: var(--mid-light-blue);
+  border-radius: 6px;
+  display: none; 
+}
+
+
+#galeria {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+#galeria img {
+  max-width: 200px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}

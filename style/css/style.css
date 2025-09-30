@@ -1,0 +1,30 @@
+.bemutatkozas, .extra-kep {
+    display: none;
+}
+
+img {
+    max-width: 200px;
+    height: auto;
+}
+
+
+/*todo lisat css e*/
+.task-item {
+    cursor: pointer;
+    list-style-type: none;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.completed .task-text {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.delete-button {
+    float: right;
+    color: red;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
