@@ -1,9 +1,8 @@
 @import url("valtozok.css");
 
-
 body {
   margin: 0;
-  padding-top: 80px; 
+  padding-top: 80px;
   font-family: Arial, sans-serif;
   background-color: var(--light-blue);
   color: var(--deep-blue);
@@ -18,10 +17,8 @@ header {
   background-color: var(--dark-blue);
   color: var(--light-blue);
   z-index: 1000;
-
   display: flex;
   align-items: center;
-  gap: 2rem;
   padding: 0 2rem;
   height: 80px;
 }
@@ -29,18 +26,28 @@ header {
 header h1 {
   margin: 0;
   font-size: 1.5rem;
-  color: var(--light-blue);
+}
+
+header h1 a {
+    color: var(--light-blue);
+    text-decoration: none;
 }
 
 
-nav ul {
+.main-nav {
+    flex-grow: 1;
+    margin-left: 2rem;
+}
+
+.main-nav ul {
   list-style: none;
   display: flex;
+  align-items: center;
   margin: 0;
   padding: 0;
 }
 
-nav ul li a {
+.main-nav ul li a {
   display: block;
   padding: 1rem 1.5rem;
   text-decoration: none;
@@ -49,9 +56,17 @@ nav ul li a {
   transition: background-color 0.2s ease;
 }
 
-nav ul li a:hover {
+.main-nav ul li a:hover {
   background-color: var(--mid-blue);
   color: white;
+}
+
+
+.ora-container {
+    margin-left: auto;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 3%;
 }
 
 
@@ -64,9 +79,10 @@ main {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-main h1, 
-main h2, 
+main h1,
+main h2,
 main h3 {
+  text-align: center;
   color: var(--dark-blue);
 }
 
@@ -74,16 +90,24 @@ main p {
   line-height: 1.6;
 }
 
+.csapat-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
 
 .csapattag, .tanar {
-  margin-bottom: 2rem;
   text-align: center;
 }
 
 .csapattag img, .tanar img {
-  max-width: 180px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
 .csapattag h3, .tanar h3 {
@@ -105,26 +129,23 @@ button:hover {
   background-color: var(--dark-blue);
 }
 
-
 .bemutatkozas {
   margin-top: 0.5rem;
   padding: 0.5rem;
   background-color: var(--mid-light-blue);
   border-radius: 6px;
-  display: none; 
+  display: none;
 }
 
-
 #galeria {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
+  text-align: center;
   margin-top: 1rem;
 }
 
 #galeria img {
-  max-width: 200px;
+  display: none;
+  max-width: 100%;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  margin: 1rem auto 0;
 }

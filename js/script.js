@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function frissitOra() {
         const oraElem = document.getElementById('ora');
-        // Ha nem létezik az 'ora' id-jű elem, ne csináljon semmit (hibamegelőzés)
         if (!oraElem) return;
 
         const most = new Date();

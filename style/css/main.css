@@ -41,3 +41,21 @@ nav ul li a:hover {
   border-radius: 10px;
   background-color: var(--mid-blue);
 }
+
+main {
+
+  display: flex;
+  justify-content: center;
+
+
+  padding: 3rem 0;
+}
+
+main img {
+  max-width: 90%;
+  height: auto;
+
+  border: 5px solid white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}

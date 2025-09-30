@@ -134,3 +134,29 @@ main {
 #task-list li button:hover {
     background-color: var(--mid-blue);
 }
+
+.task-item.dragging {
+    opacity: 0.5;
+    background-color: #ecf0f1;
+}
+
+
+.task-item {
+    cursor: pointer;
+    list-style-type: none;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.completed .task-text {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.delete-button {
+    float: right;
+    color: red;
+    border: none;
+    background: none;
+    cursor: pointer;
+}

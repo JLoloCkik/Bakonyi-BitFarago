@@ -2,72 +2,76 @@
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1. Feladat - Csapatoldal</title>
     <link rel="stylesheet" href="style/css/style.css">
     <link rel="stylesheet" href="style/css/feladat1.css">
 </head>
 <body>
-    <header>
-        <h1>BC Kft.</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Vissza a főmenübe</a></li>
-                <li><a href="feladat_2.html">2. Feladat - Todolista </a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        
-            <h1>Csapatunk oldala</h1>
-        
-            <p>Aktuális idő: <span id="ora"></span></p>
-        
-            <hr>
-        
-            <h2>Tagok</h2>
+<header class="main-header">
+    <div class="logo">
+        <h1><a href="index.html">BC Kft.</a></h1>
+    </div>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="feladat_1.html">1. Feladat - Csapatoldal</a></li>
+            <li><a href="feladat_2.html">2. Feladat - Todolista</a></li>
+            <li class="ora-container"><span id="ora"></span></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="content-box">
+        <h1>Csapatunk oldala</h1>
+        <hr>
+        <h2>Tagok</h2>
+        <div class="csapat-container">
             <div class="csapattag">
-                <img src="kepek/JLolo.jpg" alt="JLolo">
+                <img src="style/kepek/JLolo.jpg" alt="Jankai Lőrinc">
                 <h3>Jankai Lőrinc</h3>
-                <button onclick="toggleBemutatkozas('tagID1')">Bemutatkozás mutatása/elrejtése</button>
-                <div id="tagID1"class="bemutatkozas">
-                    <p>Sziasztok,</p>
+                <button onclick="toggleBemutatkozas('tagID1')">Bemutatkozás</button>
+                <div id="tagID1" class="bemutatkozas">
+                    <p>A csapat programozója. A JavaScript és a logika a szakterületem.</p>
                 </div>
             </div>
             <div class="csapattag">
-                <img src="kepek/gabor.jpg" alt="Gábor">
+                <img src="style/kepek/gabor.jpg" alt="Bálint Gábor">
                 <h3>Bálint Gábor</h3>
-                <button onclick="toggleBemutatkozas('tagID2')">Bemutatkozás mutatása/elrejtése</button>
+                <button onclick="toggleBemutatkozas('tagID2')">Bemutatkozás</button>
                 <div id="tagID2" class="bemutatkozas">
-                    <p>Sziasztok,</p>
+                    <p>A csapat kreatív ötletgazdája és tesztelője. Az én feladatom, hogy minden hibátlanul működjön.</p>
                 </div>
             </div>
             <div class="csapattag">
-                <img src="kepek/Kristóf.jpg" alt="Kristóf">
+                <img src="style/kepek/Kristóf.jpg" alt="Nagy Kristóf">
                 <h3>Nagy Kristóf</h3>
-                <button onclick="toggleBemutatkozas('tagID3')">Bemutatkozás mutatása/elrejtése</button>
+                <button onclick="toggleBemutatkozas('tagID3')">Bemutatkozás</button>
                 <div id="tagID3" class="bemutatkozas">
-                    <p>____---__----_--____</p>
+                    <p>A csapat designere. A látványért és a reszponzív kinézetért felelek.</p>
                 </div>
             </div>
-        
-            <h2>Felkészítő tanár</h2>
-            <div class="tanar">
-                <img src="kepek/tanár.jpg" alt="Felkészítő tanár">
-                <h3>Szabó Emánuel</h3>
-            </div>
-        
-            <p><strong>Iskola:</strong>Ceglédi SZC Közgazdasági és Informatikai Technikum</p>
-        
-            <hr>
-        
-            <h2>Galéria</h2>
-            <button id="kep-gomb">Következő kép</button>
-            <div id="galeria">
-                <img src="kepek/extra1.jpg" class="extra-kep" alt="Extra kép 1">
-                <img src="kepek/extra2.jpg" class="extra-kep" alt="Extra kép 2">
-                <img src="kepek/extra3.jpg" class="extra-kep" alt="Extra kép 3">
-            </div>
-    </main>
-  <script src="js/script.js"></script>
+        </div>
+
+        <h2>Felkészítő tanár</h2>
+        <div class="tanar">
+            <img src="style/kepek/tanár.jpg" alt="Felkészítő tanár">
+            <h3>Szabó Emánuel</h3>
+        </div>
+
+        <p><strong>Iskola:</strong> Ceglédi SZC Közgazdasági és Informatikai Technikum</p>
+        <hr>
+
+        <h2>Galéria</h2>
+        <button id="kep-gomb">Következő kép</button>
+        <div id="galeria">
+            <img src="style/kepek/random_picture.webp" class="extra-kep" alt="Tájkép">
+            <img src="style/kepek/random_picture1.webp" class="extra-kep" alt="Tájkép">
+            <img src="style/kepek/random_picture2.jpg" class="extra-kep" alt="Tájkép">
+        </div>
+    </section>
+</main>
+
+<script src="js/script.js"></script>
 </body>
 </html>
