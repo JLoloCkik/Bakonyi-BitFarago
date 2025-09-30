@@ -4,19 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TODO Lista</title>
-
+    <link rel="stylesheet" href="style/css/feladat2.css">
     <link rel="stylesheet" href="style/css/style.css">
 </head>
 <body>
-
-    <div class="todo-container">
-        <h1>Teendők Listája</h1>
-        <div class="input-section">
-            <input type="text" id="task-input" placeholder="Új feladat hozzáadása...">
-            <button id="add-task-button">Hozzáadás</button>
+    <header>
+        <h1>BC Kft.</h1>
+        <nav>
+            <ul>
+                <li><a href="feladat_1.html">1. Feladat - Csapatoldal</a></li>
+                <li><a href="index.html">Vissza a főmenübe </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <div class="todo-container">
+            <h1>Teendők Listája</h1>
+            <div class="input-section">
+                <input type="text" id="task-input" placeholder="Új feladat hozzáadása...">
+                <button id="add-task-button">Hozzáadás</button>
+            </div>
+            <ul id="task-list"></ul>
         </div>
-        <ul id="task-list"></ul>
-    </div>
+    </main>
 
     <script src="js/toodo.js"></script>
 </body>

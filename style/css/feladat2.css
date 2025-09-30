@@ -1,0 +1,136 @@
+@import url("valtozok.css");
+
+body {
+  margin: 0;
+  padding-top: 80px; 
+  font-family: Arial, sans-serif;
+  background-color: var(--light-blue);
+  color: var(--deep-blue);
+}
+
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--dark-blue);
+  color: var(--light-blue);
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 2rem;
+  height: 80px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--light-blue);
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  display: block;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  color: var(--light-blue);
+  transition: background-color 0.2s ease;
+}
+
+nav ul li a:hover {
+  background-color: var(--mid-blue);
+  color: white;
+}
+
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  background-color: var(--light-blue);
+
+
+}
+
+.todo-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.todo-container h1 {
+    text-align: center;
+    color: var(--dark-blue);
+    margin-bottom: 1.5rem;
+}
+
+.input-section {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#task-input {
+    flex: 1;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--mid-blue);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#add-task-button {
+    background-color: var(--mid-blue);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#add-task-button:hover {
+    background-color: var(--dark-blue);
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#task-list li {
+    background-color: var(--mid-light-blue);
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+#task-list li button {
+    background-color: var(--dark-blue);
+    border: none;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#task-list li button:hover {
+    background-color: var(--mid-blue);
+}

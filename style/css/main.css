@@ -38,5 +38,6 @@ nav ul li a {
 }
 
 nav ul li a:hover {
+  border-radius: 10px;
   background-color: var(--mid-blue);
 }
